@@ -21,7 +21,6 @@ public class CheckZipFileTests {
         String zipPassword = "qwe123";
 
         unZipFileWithPassword(zipFilePath, unZipFile, zipPassword);
-
         XLS xls = getXls(unzipFolderFilePath);
         assertThat(xls, XLS.containsText(expectedDataZipFile));
 
