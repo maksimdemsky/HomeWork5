@@ -12,9 +12,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 
-
 public class Files {
-
 
     public static PDF getPdf(String path) throws IOException {
         return new PDF(getFile(path));
@@ -51,7 +49,4 @@ public class Files {
         }
         return result;
     }
-
-
-
 }
