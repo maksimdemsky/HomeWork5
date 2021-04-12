@@ -14,7 +14,6 @@ public class CheckXlsXlsxFileTests {
         String expectedDataXlsFile = "It’s text for xls file test.";
         XLS xls = getXls(xlsFilePath);
         assertThat(xls, XLS.containsText(expectedDataXlsFile));
-
     }
 
     @Test
@@ -24,7 +23,6 @@ public class CheckXlsXlsxFileTests {
         XLS xls = getXls(xlsFilePath);
         String actualData = xls.excel.getSheetAt(0).getRow(1).getCell(0).toString();
         assertThat(actualData, containsString(expectedSecondDataXlsFile));
-
     }
 
     @Test
@@ -33,7 +31,6 @@ public class CheckXlsXlsxFileTests {
         String expectedDataXlsFile = "It’s text for xlsx file test.";
         XLS xls = getXls(xlsFilePath);
         assertThat(xls, XLS.containsText(expectedDataXlsFile));
-
     }
 
     @Test
@@ -43,6 +40,5 @@ public class CheckXlsXlsxFileTests {
         XLS xls = getXls(xlsFilePath);
         String actualData = xls.excel.getSheetAt(0).getRow(1).getCell(0).toString();
         assertThat(actualData, containsString(expectedSecondDataXlsFile));
-
     }
 }

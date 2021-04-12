@@ -1,12 +1,8 @@
 package tests;
 
 import com.codeborne.xlstest.XLS;
-import net.lingala.zip4j.core.ZipFile;
 import net.lingala.zip4j.exception.ZipException;
 import org.junit.jupiter.api.Test;
-
-import java.io.IOException;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static utils.Files.getXls;
 import static utils.Zip.unZipFileWithPassword;
