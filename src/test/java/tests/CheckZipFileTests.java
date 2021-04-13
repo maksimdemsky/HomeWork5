@@ -19,7 +19,5 @@ public class CheckZipFileTests {
         unZipFileWithPassword(zipFilePath, unZipFile, zipPassword);
         XLS xls = getXls(unzipFolderFilePath);
         assertThat(xls, XLS.containsText(expectedDataZipFile));
-
-
     }
 }
